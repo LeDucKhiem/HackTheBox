@@ -1,0 +1,18 @@
+In xor operation: If 'a xor b = c' then 'a xor c = b'
+
+We have flag: 134af6e1297bc4a96f6a87fe046684e8047084ee046d84c5282dd7ef292dc9
+
+The length of key in code is 4. we can assume first 4 character of flag is 'HTB{'
+
+
+a = hex(ord('H')) #find hexadecimal of 'H'
+=> H = 0x48
+Then xor 0x48 with 0x13:
+hex(a^b) = 0x5b
+
+Similarly with the remain chacarter, we get the key: 5b1eb49a
+
+Decode flag in https://www.dcode.fr/xor-cipher with hexadecimal key, it will return a flag.
+
+Flag: HTB{rep****************s3cur3}
+         
