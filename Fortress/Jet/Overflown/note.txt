@@ -1,0 +1,2 @@
+when get shell on Command, run this command socat TCP4-LISTEN:13373,reuseaddr,fork EXEC:/home/leak
+change port to any you want.
